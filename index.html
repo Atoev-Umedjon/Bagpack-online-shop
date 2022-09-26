@@ -1,0 +1,99 @@
+ч<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Online Backpack-Shop</title>
+</head>
+
+<body>
+ 
+    <div class="container">
+
+        <h1 class="block-title">The world of backpacks</h1>
+        <div class="products-block">
+            
+            <div class="product">
+               
+                <img src="./images/kid.png" alt="Backpack for kids" class="product-photo">
+                
+                <span class="product-name">Backpack for kids</span>
+                
+                <span class="product-price">$15.50</span>
+            </div>
+            
+            <div class="product">
+                
+                <img src="./images/школьник.png" alt="School backpack" class="product-photo">
+                
+                <span class="product-name">School backpack</span>
+               
+                <span class="product-price">$18.00</span>
+            </div>
+           
+            <div class="product">
+               
+                <img src="./images/girl.png" alt="Backpack for girls" class="product-photo">
+               
+                <span class="product-name">Backpack for girls</span>
+                
+                <span class="product-price">$24.80</span>
+            </div>
+           
+            <div class="product">
+                
+                <img src="./images/поход1.png" alt="Hiking backpack" class="product-photo">
+                
+                <span class="product-name">Hiking backpack</span>
+                
+                <span class="product-price">$30.00</span>
+            </div>
+        </div>
+
+       
+        <div class="action-block">
+        
+            <select name="select" id="select-id" class="product-dropdown">
+                <option value="">Choose Backpack</option>
+                <option value="Backpack for kids">Backpack for kids</option>
+                <option value="School backpack">School backpack</option>
+                <option value="Backpack for girls">Backpack for girls</option>
+                <option value="Hiking backpack">Hiking backpack</option>
+            </select>
+           
+            <input type="number" id="product-number" class="product-number" min="1" max="20" placeholder=".num">
+            
+            <button id="add-to-cart-button" class="add-to-cart-button">Add to Cart</button>
+        </div>
+        
+
+
+        
+        <div id="cart-block" class="cart-block">
+           
+            <ul id="cart-table" class="cart-table">
+
+                <li class="cart-product">
+                    <span class="cart-product-name">Backpack</span>
+                    <span class="cart-product-number">Amount</span>
+                    <span class="cart-product-cost">Cost</span>
+                </li>
+
+            </ul>
+            <input id="Delivery" type="checkbox"  >
+            <label for="html">Delivery</label>
+
+            
+            <div id="total-cost" class="total-cost"></div>
+        </div>
+        
+    </div>
+    
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
